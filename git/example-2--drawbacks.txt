@@ -1,0 +1,20 @@
+List all available branches:
+$ git branch
+* main
+
+
+Make a new branch called foo:
+$ git branch foo
+
+$ git branch
+  foo
+* main
+
+
+Deletes a branch called foo:
+$ git branch --delete foo
+Branch foo entfernt (war 178bb66).
+
+
+$ git branch
+* main
