@@ -1,3 +1,5 @@
+Not intuitive commands
+
 List all available branches:
 $ git branch
 * main

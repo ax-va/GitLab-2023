@@ -33,5 +33,3 @@ Noch keine Commits
 
 nichts zu committen (erstellen/kopieren Sie Dateien und benutzen
 Sie "git add" zum Versionieren)
-
-
