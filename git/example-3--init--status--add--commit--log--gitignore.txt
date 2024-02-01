@@ -128,7 +128,7 @@ Edit
 personal-notes.txt
 
 # configuration files for my IDE
-.ide-config/
+ide-config/
 ----------------------------------------------------
 CTRL+O to save, CTRL+X to exit
 
@@ -144,7 +144,6 @@ CTRL+O to save, CTRL+X to exit
 
 ----------------------------------------------------
 
-
-
-
-
+~/PycharmProjects/test-repo$ git status
+Auf Branch main
+nichts zu committen, Arbeitsverzeichnis unverändert
