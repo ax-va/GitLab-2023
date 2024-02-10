@@ -1,4 +1,4 @@
-Add a tag representing the version number to the latest commit on your branch
+Add a tag representing the version number to the latest commit on your branch:
 ~/PycharmProjects/test-repo$ git tag version-1-0-beta
 
 ----------------------------------------------------

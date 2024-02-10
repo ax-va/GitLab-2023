@@ -40,12 +40,12 @@ Sie "git add" zum Versionieren)
 
 ----------------------------------------------------
 
-Create a file
+Create a file:
 ~/PycharmProjects/test-repo$ > todo.txt
 
 ----------------------------------------------------
 
-Stage a file (add to the staging area)
+Stage a file (add to the staging area):
 ~/PycharmProjects/test-repo$ git add todo.txt
 
 ----------------------------------------------------
@@ -61,7 +61,7 @@ Zum Commit vorgemerkte Änderungen:
 
 ----------------------------------------------------
 
-Commit
+Commit:
 ~/PycharmProjects/test-repo$ git commit --message "add empty file"
 [main (Root-Commit) d9f6109] add empty file
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -100,7 +100,7 @@ d9f61092223744979529659f1e1bddefd8be45b2 is a Secure Hash Algorithm (SHA).
 
 ----------------------------------------------------
 
-Create a file and a directory that should be ignored
+Create a file and a directory that should be ignored:
 ~/PycharmProjects/test-repo$ > personal-notes.txt
 ~/PycharmProjects/test-repo$ mkdir ide-config
 ~/PycharmProjects/test-repo$ cd ide-config
@@ -117,12 +117,12 @@ nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
 
 ----------------------------------------------------
 
-Create .gitignore
+Create .gitignore:
 ~/PycharmProjects/test-repo$ nano .gitignore
 
 ----------------------------------------------------
 
-Edit
+Edit:
 ----------------------------------------------------
 # notes to myself that are not for public consumption
 personal-notes.txt

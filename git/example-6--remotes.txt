@@ -4,7 +4,7 @@ Get a list of remotes that Git knows about
 ----------------------------------------------------
 Create a connection with GitHub to clone the golden repo
 
-Generate SSH keypair
+Generate SSH keypair:
 $ ssh-keygen -o -t rsa -C "ssh@github.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/delorian/.ssh/id_rsa):
@@ -21,7 +21,7 @@ $ cd /home/delorian/.ssh/
 ~/.ssh$ ls
 id_rsa  id_rsa.pub  known_hosts
 
-Save the given SSH public key on the GitHub's side
+Add the given SSH public key on the GitHub's side:
 ~/.ssh$ cat id_rsa.pub
 ssh-rsa ... ssh@github.com
 
@@ -76,35 +76,35 @@ pushing
 Create a new branch:
 ~/PycharmProjects/Test-for-Jenkins$ git branch new-todos
 
-Switch to the new branch
+Switch to the new branch:
 ~/PycharmProjects/test-repo$ git switch new-todos
 Zu Zweig »new-todos« gewechselt
 
-Create a file
+Create a file:
 ~/PycharmProjects/Test-for-Jenkins$ > new-todo.txt
 
-Stage a file
+Stage a file:
 ~/PycharmProjects/Test-for-Jenkins$ git add new-todo.txt
 
-Show the status
+Show the status:
 ~/PycharmProjects/Test-for-Jenkins$ git status
 Auf Branch new-todos
 Zum Commit vorgemerkte Änderungen:
   (benutzen Sie "git restore --staged <Datei>..." zum Entfernen aus der Staging-Area)
         neue Datei:     new-todo.txt
 
-Commit
+Commit:
 ~/PycharmProjects/Test-for-Jenkins$ git commit --message "new-todo.txt added"
 [new-todos 1a1ee58] new-todo.txt added
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new-todo.txt
 
-Show the status
+Show the status:
 ~/PycharmProjects/Test-for-Jenkins$ git status
 Auf Branch new-todos
 nichts zu committen, Arbeitsverzeichnis unverändert
 
-Push the changes into the golden repo
+Push the changes into the golden repo:
 $ git push --set-upstream origin new-todos
 Enter passphrase for key '/home/delorian/.ssh/id_rsa': ...
 Objekte aufzählen: 4, fertig.
