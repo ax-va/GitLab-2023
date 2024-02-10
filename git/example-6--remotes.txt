@@ -122,8 +122,3 @@ To github.com:ax-va/Test-for-Git.git
 Branch 'new-todos' folgt nun Remote-Branch 'new-todos' von 'origin'
 
 ----------------------------------------------------
-
-
-
-
-
