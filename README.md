@@ -8,7 +8,7 @@ https://docs.gitlab.com/ee/ssh
 
 https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 
-Ebook for free: Pro Git by Scott Chacon and Ben Straub
+Ebook for free: "Pro Git" by Scott Chacon and Ben Straub
 
 https://git-scm.com/book/en/v2
 
