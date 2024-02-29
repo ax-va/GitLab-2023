@@ -1,9 +1,10 @@
 Add a tag representing the version number to the latest commit on your branch:
-~/PycharmProjects/test-repo$ git tag version-1-0-beta
+```unix
+~/test-repo$ git tag version-1-0-beta
+```
 
-----------------------------------------------------
-
-~/PycharmProjects/test-repo$ git log
+```unix
+~/test-repo$ git log
 
 commit aef47aa16386bdf99399df2b57250703d752a378 (HEAD -> main, tag: version-1-0-beta)
 Author: ax-va <my_email>
@@ -20,18 +21,19 @@ Date:   Wed Jan 31 08:47:44 2024 +0100
 commit d9f61092223744979529659f1e1bddefd8be45b2
 Author: ax-va <my_email>
 Date:   Tue Jan 30 19:11:41 2024 +0100
+```
 
-----------------------------------------------------
-
-~/PycharmProjects/test-repo$ git tag --list
+```unix
+~/test-repo$ git tag --list
 version-1-0-beta
+```
 
-----------------------------------------------------
-
-~/PycharmProjects/test-repo$ git tag --delete version-1-0-beta
+```unix
+~/test-repo$ git tag --delete version-1-0-beta
 Tag 'version-1-0-beta' gelöscht (war aef47aa)
+```
 
-----------------------------------------------------
-
-~/PycharmProjects/test-repo$ git tag --list
+```unix
+~/test-repo$ git tag --list
 <empty list>
+```

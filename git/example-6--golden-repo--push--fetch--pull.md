@@ -1,10 +1,12 @@
 Get a list of remotes that Git knows about
-~/PycharmProjects/test-repo$ git remote --verbose
+```unix
+~/test-repo$ git remote --verbose
+```
 
-----------------------------------------------------
 Create a connection with GitHub to clone the golden repo
 
 Generate SSH keypair:
+```unix
 $ ssh-keygen -o -t rsa -C "ssh@github.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/delorian/.ssh/id_rsa):
@@ -16,16 +18,22 @@ The key fingerprint is:
 SHA256:...
 The key's randomart image is:
 ...
+```
 
+```unix
 $ cd /home/delorian/.ssh/
 ~/.ssh$ ls
 id_rsa  id_rsa.pub  known_hosts
+```
 
 Add the given SSH public key on the GitHub's side:
+```unix
 ~/.ssh$ cat id_rsa.pub
 ssh-rsa ... ssh@github.com
+```
 
-~/PycharmProjects$ git clone git@github.com:ax-va/Test-for-Git.git
+```unix
+$ git clone git@github.com:ax-va/Test-for-Git.git
 Klone nach 'Test-for-Git' …
 The authenticity of host 'github.com (140.82.121.4)' can't be established.
 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
@@ -53,61 +61,75 @@ remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Empfange Objekte: 100% (3/3), fertig.
+```
 
-----------------------------------------------------
+```unix
+$ cd Test-for-Git
+```
 
-$ cd ~/PycharmProjects/Test-for-Git
+```unix
 Get a list of remotes that Git knows about
-~/PycharmProjects/Test-for-Jenkins$ git remote --verbose
+~/Test-for-Git$ git remote --verbose
 origin  git@github.com:ax-va/Test-for-Git.git (fetch)
 origin  git@github.com:ax-va/Test-for-Git.git (push)
-
-----------------------------------------------------
+```
 
 "fetch" is for getting other people’s commits,
 "push" is for sending my commits.
 
-----------------------------------------------------
 
-pushing
-
-----------------------------------------------------
+## pushing
 
 Create a new branch:
-~/PycharmProjects/Test-for-Jenkins$ git branch new-todos
+```unix
+~/Test-for-Git$ git branch new-todos
+```
 
 Switch to the new branch:
-~/PycharmProjects/test-repo$ git switch new-todos
+```unix
+~/test-repo$ git switch new-todos
 Zu Zweig »new-todos« gewechselt
+```
 
 Create a file:
-~/PycharmProjects/Test-for-Jenkins$ > new-todo.txt
+```unix
+~/Test-for-Git$ > new-todo.txt
+```
 
 Stage a file:
-~/PycharmProjects/Test-for-Jenkins$ git add new-todo.txt
+```unix
+~/Test-for-Git$ git add new-todo.txt
+```
 
 Get the status:
-~/PycharmProjects/Test-for-Jenkins$ git status
+```unix
+~/Test-for-Git$ git status
 Auf Branch new-todos
 Zum Commit vorgemerkte Änderungen:
   (benutzen Sie "git restore --staged <Datei>..." zum Entfernen aus der Staging-Area)
         neue Datei:     new-todo.txt
+```
 
 Commit:
-~/PycharmProjects/Test-for-Jenkins$ git commit --message "new-todo.txt added"
+```unix
+~/Test-for-Git$ git commit --message "new-todo.txt added"
 [new-todos 1a1ee58] new-todo.txt added
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new-todo.txt
+```
 
 Get the status:
-~/PycharmProjects/Test-for-Jenkins$ git status
+```unix
+~/Test-for-Git$ git status
 Auf Branch new-todos
 nichts zu committen, Arbeitsverzeichnis unverändert
+```
 
 Push the changes into the remote repo,
 the name of the remote branch is set once,
 then you can use "git push" without the branch's name:
-$ git push --set-upstream origin new-todos
+```unix
+~/Test-for-Git$ git push --set-upstream origin new-todos
 Enter passphrase for key '/home/delorian/.ssh/id_rsa': ...
 Objekte aufzählen: 4, fertig.
 Zähle Objekte: 100% (4/4), fertig.
@@ -122,31 +144,31 @@ remote:
 To github.com:ax-va/Test-for-Git.git
  * [new branch]      new-todos -> new-todos
 Branch 'new-todos' folgt nun Remote-Branch 'new-todos' von 'origin'
+```
 
-----------------------------------------------------
-
-fetching
-
-----------------------------------------------------
+## fetching
 
 "git fetch" does not update any branches or files on your local computer.
 It collects metadata about any edits without making any changes to your local repo.
 
-----------------------------------------------------
 
-pulling
+## pulling
 
-----------------------------------------------------
-
-~/PycharmProjects/Test-for-Git$ cat new-todo.txt
+The file is empty
+```unix
+~/Test-for-Git$ cat new-todo.txt
+```
 
 Change the content and commit on GitHub
 
-~/PycharmProjects/Test-for-Git$ git switch new-todos
+```unix
+~/Test-for-Git$ git switch new-todos
 Bereits auf 'new-todos'
 Ihr Branch ist auf demselben Stand wie 'origin/new-todos'.
+```
 
-~/PycharmProjects/Test-for-Git$ git pull
+```unix
+~/Test-for-Git$ git pull
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (2/2), done.
@@ -158,8 +180,9 @@ Aktualisiere 1a1ee58..f97c502
 Fast-forward
  new-todo.txt | 1 +
  1 file changed, 1 insertion(+)
+```
 
-~/PycharmProjects/Test-for-Git$ cat new-todo.txt
+```unix
+~/Test-for-Git$ cat new-todo.txt
 The new content was added
-
-----------------------------------------------------
+```

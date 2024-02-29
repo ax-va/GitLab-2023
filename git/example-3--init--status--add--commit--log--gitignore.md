@@ -69,7 +69,7 @@ Commit:
 ```
 
 ```unix
- ~/test-repo$ git status
+~/test-repo$ git status
 Auf Branch main
 nichts zu committen, Arbeitsverzeichnis unverändert
 
@@ -80,7 +80,7 @@ nichts zu committen, Arbeitsverzeichnis unverändert
 ```
 
 ```unix
-~/test-repo$ git
+~/test-repo$ git log
 commit 18f3c6ad7690ad36251a287978d2bb1153a6008c (HEAD -> main)
 Author: ax-va <my_email>
 Date:   Wed Jan 31 08:47:44 2024 +0100
