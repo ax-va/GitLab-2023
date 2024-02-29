@@ -36,7 +36,7 @@ core.bare=false
 core.logallrefupdates=true
 ```
 
-Recommended to use "main" instead of "master":
+Recommended using "main" instead of "master":
 ```unix
 $ git config --global init.defaultBranch main
 ```
