@@ -3,8 +3,6 @@ Not intuitive commands
 List all available branches:
 ```unix
 $ git branch
-```
-```unix
 * main
 ```
 
