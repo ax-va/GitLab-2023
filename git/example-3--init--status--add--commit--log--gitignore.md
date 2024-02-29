@@ -95,6 +95,7 @@ Date:   Tue Jan 30 19:11:41 2024 +0100
 ```
 
 Press `q` to exit.
+
 d9f61092223744979529659f1e1bddefd8be45b2 is a Secure Hash Algorithm (SHA).
 
 Create a file and a directory that will be ignored:
