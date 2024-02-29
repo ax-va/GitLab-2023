@@ -1,14 +1,10 @@
 ```unix
 $ git --version
-```
-```unix
 git version 2.34.1
 ```
 
 ```unix
 $ git config --list
-```
-```unix
 user.name=<user_name>
 user.email=<user_email>
 core.autocrlf=input
@@ -25,8 +21,6 @@ $ git config --global user.name "George Spelvin"
 
 ```unix
 $ git config --list
-```
-```unix
 user.name=George Spelvin
 user.email=george.spelvin@example.com
 core.autocrlf=input
@@ -43,8 +37,6 @@ $ git config --global init.defaultBranch main
 
 ```unix
 $ git config --list
-```
-```unix
 user.name=<user_name>
 user.email=<user_email>
 core.autocrlf=input
