@@ -1,4 +1,6 @@
+```unix
 $ git --version
+```
 git version 2.34.1
 
 
