@@ -1,10 +1,14 @@
 ```unix
 $ git --version
 ```
+```unix
 git version 2.34.1
+```
 
-
+```unix
 $ git config --list
+```
+```unix
 user.name=<your_name>
 user.email=<your_email>
 core.autocrlf=input
@@ -12,6 +16,7 @@ core.repositoryformatversion=0
 core.filemode=true
 core.bare=false
 core.logallrefupdates=true
+```
 
 
 $ git config --global user.email "george.spelvin@example.com"
