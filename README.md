@@ -13,3 +13,6 @@ Ebook for free: "Pro Git" by Scott Chacon and Ben Straub
 https://git-scm.com/book/en/v2
 
 https://dangitgit.com/
+
+## GitLab installation documentation
+https://about.gitlab.com/install/
