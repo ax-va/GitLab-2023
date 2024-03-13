@@ -1,22 +1,22 @@
 ## Common
 
-SDLC = software development life cycle
+`SDLC` = software development life cycle
 
-QA = quality assurance
+`QA` = quality assurance
 
 ## GitLab Groups and Projects
 
-GitLab account is like a tree root.
+`Account` is like a tree root.
 
-GitLab group is like a non-leaf element in the tree.
+`Group` is like a non-leaf element in the tree.
 
-GitLab project is like a leaf element in the tree.
+`Project` is like a leaf element in the tree.
 
-A GitLab project = a Git repository in which a code is stored.
+`Project` = a Git repository in which a code is stored.
 
-GitLab group = a collection of GitLab (software-related or non-software-related) projects or other GitLab (sub)groups.
+`Group` = a collection of (software-related or non-software-related) projects or other (sub)groups.
 
-Up to 20 levels of subgroups within a GitLab group can be used.
+Up to 20 levels of subgroups within a group can be used.
 
 For groups, you can:
 - invite other GitLab users to be members of a group;
@@ -25,12 +25,12 @@ For groups, you can:
 
 ## GitLab Issues
 
-Issue = like a story or ticket assigned to a project
+`Issue` = like a story or ticket assigned to a project
 
-An issue can also contain labels and weight (metric like story points).  
+An `issue` can also contain `labels` and `weight` (metric like story points).  
 
-Scoped labels are mutually exclusive and marked with double colons `::`. 
+`Scoped labels` are mutually exclusive and marked with double colons `::`. 
 An example is `Status::Healthy` and `Status::At Risk`. 
 That means that an issue cannot have both these scoped labels.
 
-Due date = ...
+`Due date` can be, for example, due in 3 days, although `weight` can be 3 days. 
