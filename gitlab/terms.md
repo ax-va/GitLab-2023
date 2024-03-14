@@ -34,3 +34,21 @@ An example is `Status::Healthy` and `Status::At Risk`.
 That means that an issue cannot have both these scoped labels.
 
 `Due date` can be, for example, due in 3 days, although `weight` can be 3 days. 
+
+## Merge Requests (MRs)
+
+`Merge requests` are a concept that is specific to GitLab and not to Git.
+
+Create a branch in GitLab GUI: 
+- `Repository` (left-hand navigation pane) -> 
+- `Branches` (left-hand navigation pane) ->
+- `New Branch` (top-right button) ->
+- `Create Branch` (button).
+
+Commit in GitLab GUI: 
+- `Repository` (left-hand navigation pane) -> 
+- `Files` (left-hand navigation pane) -> 
+- Branch name (dropdown) -> 
+- File to edit -> 
+- `Edit in Web IDE` to open an in-browser ->
+- Make changes ...
