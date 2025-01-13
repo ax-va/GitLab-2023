@@ -5,8 +5,8 @@ git version 2.34.1
 
 ```unix
 $ git config --list
-user.name=<user_name>
-user.email=<user_email>
+user.name=<your_name>
+user.email=<your_email>
 core.autocrlf=input
 core.repositoryformatversion=0
 core.filemode=true
@@ -15,14 +15,14 @@ core.logallrefupdates=true
 ```
 
 ```unix
-$ git config --global user.email "george.spelvin@example.com"
-$ git config --global user.name "George Spelvin"
+$ git config --global user.email "ax-va@example.com"
+$ git config --global user.name "Alexander Vasiliev"
 ```
 
 ```unix
 $ git config --list
-user.name=George Spelvin
-user.email=george.spelvin@example.com
+user.name=Alexander Vasiliev
+user.email=ax-va@example.com
 core.autocrlf=input
 core.repositoryformatversion=0
 core.filemode=true
@@ -37,8 +37,8 @@ $ git config --global init.defaultBranch main
 
 ```unix
 $ git config --list
-user.name=<user_name>
-user.email=<user_email>
+user.name=<your_name>
+user.email=<your_email>
 core.autocrlf=input
 init.defaultbranch=main
 core.repositoryformatversion=0
