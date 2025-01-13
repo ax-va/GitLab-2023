@@ -25,12 +25,12 @@ For groups, you can:
 
 ## GitLab Issues
 
-`Issue` = like a story or ticket assigned to a project
+`Issue` = like a story or ticket assigned to a project.
 
 An `issue` can also contain `labels` and `weight` (metric like story points).  
 
 `Scoped labels` are mutually exclusive and marked with double colons `::`. 
-An example is `Status::Healthy` and `Status::At Risk`. 
+An example could be either `Status::Healthy` or `Status::At Risk` or something else. 
 That means that an issue cannot have both these scoped labels.
 
 `Due date` can be, for example, due in 3 days, although `weight` can be 3 days. 
