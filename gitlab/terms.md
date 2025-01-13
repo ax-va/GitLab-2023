@@ -1,10 +1,6 @@
-## Common
+# Projects, Groups, Issues, Branches, and Merge Requests
 
-`SDLC` = software development life cycle
-
-`QA` = quality assurance
-
-## GitLab Groups and Projects
+## Groups and Projects
 
 `Account` is like a tree root.
 
