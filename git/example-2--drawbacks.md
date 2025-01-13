@@ -1,4 +1,4 @@
-Not intuitive commands
+# Not intuitive commands
 
 List all available branches:
 ```unix
